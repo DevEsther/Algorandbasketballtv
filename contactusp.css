@@ -8,7 +8,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f8f8f8; 
     line-height: 1.6;
-    margin: 0; /* Remove default margin */
+    margin: 0; 
 }
 
 .container {
@@ -24,20 +24,20 @@ body {
 .goback-link {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #333; /* Black background color */
-    color: #fff; /* White text color */
+    background-color: #333; 
+    color: #fff; 
     text-decoration: none;
     border-radius: 5px;
     font-size: 16px;
     font-weight: bold;
-    border: 2px solid #333; /* Matching border */
+    border: 2px solid #333; 
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
 .goback-link:hover {
-    background-color: #000; /* Darker shade of black on hover */
-    color: #fff; /* White text color on hover */
-    transform: translateY(-2px); /* Move up slightly on hover */
+    background-color: #000; 
+    color: #fff; 
+    transform: translateY(-2px); 
 }
 
 .contact-section {
@@ -119,6 +119,8 @@ body {
     display: inline-block;
     margin: 0 10px;
     color: black; 
+    text-decoration: none;
+
 }
 
 .footer {
