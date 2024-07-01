@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Navbar styles */
+.navbar {
+    background: linear-gradient(90deg, rgba(0,0,0,0.7), rgba(34,34,34,0.7));
+    position: fixed;
+    width: 100%;
+    z-index: 1000; /* Ensure navbar is above other elements */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #D4AF37; /* Gold leaf color */
+    font-size: 24px;
+    transition: color 0.3s ease;
+    max-width: 200px; /* Limit maximum width to prevent overflow */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Show ellipsis (...) for overflow */
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+    transform: rotate(360deg);
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #FFD700 !important;
+}
+
+.navbar-toggler {
+    border: none;
+    color: white;
+    background-color: white;
+}
+
+/* Hero section styles */
+.hero-section {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    background-image: url('./img/pexels-federicoborellophoto-2817134.jpg');
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay-text {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #D4AF37; /* Gold leaf color */
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FFD700; /* Lighter shade of gold */
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #D4AF37; /* Gold leaf color */
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    color: #D4AF37;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #FFD700; /* Lighter shade of gold */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 20px;
+        max-width: 150px; /* Adjust max-width for smaller screens */
+    }
+
+    .overlay-text {
+        font-size: 2em;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+}

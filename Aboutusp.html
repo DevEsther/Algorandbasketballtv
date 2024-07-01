@@ -8,57 +8,72 @@
     <link rel="stylesheet" href="aboutus.css">
 </head>
 <body>
-    <header class="header">
-        <nav>
-            <img src="logo.png" alt="Logo" class="logo">
-            <ul>
-                <li><a href="./index.html" id="home">Home</a></li>
-                <li><a href="./Roadmap.html" id="roadmap">Roadmap</a></li>
-                <li><a href="./Aboutus.html" id="about_us">About Us</a></li>
-                <li><a href="./contactusp.html" id="contact_us">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+ 
 
     <main class="about-us">
+        <a href="./index.html" class="goback-link">Go Home</a>
+
+
         <section class="hero-about">
-            <h1>AlgorandBasketballTV</h1>
+            <h2>AlgorandBasketballTV</h1>
             <h2>About Us</h2>
         </section>
         <section class="company-story">
-            <h3>🏀🖥AlgorandBasketballTV Platform🖥🏀.</h3>
-            <p>Experience the Thrill of Basketball Like Never Before with Our Live Streaming Platform and Simulated Reality League(SRL).
-
-                In the fast-paced world of sports entertainment, fans are constantly seeking innovative ways to immerse themselves in the action. Enter our cutting-edge live streaming BasketballTV platform, where fans can experience the adrenaline of basketball games in real-time from the comfort of their homes. But that's not all, we're taking the excitement to the next level with our unique Simulated Reality League(SRL).
-
-                📹🏀Immersive Live Streaming Experience: Gone are the days of waiting for highlights or updates on the game. With our live streaming platform, fans can watch every dribble, pass, and dunk as it happens, with high-definition video and crystal-clear audio bringing the game to life. Whether it's a nail-biting buzzer-beater or a jaw-dropping slam dunk, fans won't miss a moment of the action.⛹⛹‍♂
+            <h3>🏀🖥 AlgorandBasketballTV Platform 🖥🏀</h3>
+            <p>Experience the Thrill of Basketball Like Never Before with Our Live Streaming Platform and Simulated Reality League (SRL).
+    
+                In the fast-paced world of sports entertainment, fans are constantly seeking innovative ways to immerse themselves in the action. Enter our cutting-edge live streaming BasketballTV platform, where fans can experience the adrenaline of basketball games in real-time from the comfort of their homes. But that's not all, we're taking the excitement to the next level with our unique Simulated Reality League (SRL).
+    
+                📹🏀 Immersive Live Streaming Experience: Gone are the days of waiting for highlights or updates on the game. With our live streaming platform, fans can watch every dribble, pass, and dunk as it happens, with high-definition video and crystal-clear audio bringing the game to life. Whether it's a nail-biting buzzer-beater or a jaw-dropping slam dunk, fans won't miss a moment of the action. ⛹ ⛹‍♂
             </p>
         </section>
         <section class="values">
-            <h3>Experience the Ultimate Basketball Viewing with <br>AlgorandBasketballTV</h3>
+            <h3>Experience the Ultimate Basketball Viewing with <br> AlgorandBasketballTV</h3>
             <p>
-                🏀📹On Demand Access: Can't tune in live? No problem. Our platform offers on-demand access to all games, allowing fans to catch up on missed matches at their convenience. Whether it's a rivalry showdown or a championship game, fans can relive the excitement whenever and wherever they want.
-
-                🏀📹Interactive Features: We believe in making the viewing experience interactive and engaging. Our platform offers a range of interactive features, including live chat, polls, and simulated games, allowing fans to connect with each other and share their passion for the game in real-time.
-
-                🏀📹Simulated Reality League: But what truly sets us apart is our Simulated Reality League(SRL). Powered by cutting-edge technology and advanced algorithms, our simulated league recreates the thrill of live basketball games using virtual players and teams. Fans can watch simulated games unfold in real time, with realistic gameplay and dynamic commentary that makes them feel like they're watching a live match.🎮🎮
+                🏀📹 On Demand Access: Can't tune in live? No problem. Our platform offers on-demand access to all games, allowing fans to catch up on missed matches at their convenience. Whether it's a rivalry showdown or a championship game, fans can relive the excitement whenever and wherever they want.
+    
+                🏀📹 Interactive Features: We believe in making the viewing experience interactive and engaging. Our platform offers a range of interactive features, including live chat, polls, and simulated games, allowing fans to connect with each other and share their passion for the game in real-time.
+    
+                🏀📹 Simulated Reality League: But what truly sets us apart is our Simulated Reality League (SRL). Powered by cutting-edge technology and advanced algorithms, our simulated league recreates the thrill of live basketball games using virtual players and teams. Fans can watch simulated games unfold in real time, with realistic gameplay and dynamic commentary that makes them feel like they're watching a live match. 🎮 🎮
             </p>
         </section>
         <section class="values">
             <h3>🚀🏀 Endless Entertainment</h3>
             <p>
                 With our live streaming platform and Simulated Reality League, the entertainment never stops. Whether you're a die-hard basketball fan or just looking for some excitement, our platform offers endless hours of entertainment for fans of all ages.
-
+    
                 🏀🖥 Join the Action Today
-                Ready to experience the future of basketball entertainment? Join us on our live streaming platform and immerse yourself in the excitement of live games and simulated reality. With high quality streaming, interactive features, and non-stop action, there's never been a better time to be a basketball fan. Don't miss out – sign up now and join the action! ✊🏆🏆
+                Ready to experience the future of basketball entertainment? Join us on our live streaming platform and immerse yourself in the excitement of live games and simulated reality. With high-quality streaming, interactive features, and non-stop action, there's never been a better time to be a basketball fan. Don't miss out – sign up now and join the action! ✊🏆🏆
             </p>
         </section>
+        <button id="scrollToTopBtn" title="Go to top">↑</button>
     </main>
-   <!-- footer -->
+    <!-- footer -->
+    <footer class="footer">
+        <p>&copy; 2024 AlgorandBasketballTV. All rights reserved.</p>
+    </footer>
+ 
 
-   <footer class="footer">
-    <p>&copy; 2024 AlgorandBasketballTV. All rights reserved.</p>
-</footer>
+  
+    <script>
+       
+        var mybutton = document.getElementById("scrollToTopBtn");
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        mybutton.onclick = function() {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0; 
+        };
+    </script>
  
         
     <script src="index.js"></script>
