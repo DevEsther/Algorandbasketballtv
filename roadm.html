@@ -17,50 +17,69 @@
           overflow-x: hidden; 
       }
 
-     
       .navbar {
-          background: linear-gradient(90deg, rgba(0,0,0,0.7), rgba(34,34,34,0.7));
-          position: fixed;
-          width: 100%;
-          z-index: 1000;
-      }
+            background: linear-gradient(90deg, rgba(0,0,0,0.7), rgba(34,34,34,0.7));
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
 
-      .navbar-brand {
-          display: flex;
-          align-items: center;
-          font-weight: bold;
-          /* color: #D4AF37;  */
-          color: #FFD700 !important;
-          font-size: 24px ;
-          transition: color 0.3s ease;
-      }
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            /* color: #D4AF37;  */
+            color: #FFD700 !important;
+            font-size: 24px ;
+            transition: color 0.3s ease;
+        }
 
-      .navbar-brand img {
-          margin-right: 10px;
-          transition: transform 0.3s ease;
-          color: #FFD700;
-      }
+        .navbar-brand img {
+            margin-right: 10px;
+            transition: transform 0.3s ease;
+            color: #FFD700;
+        }
 
-      .navbar-brand:hover img {
-          transform: rotate(360deg);
-          color: #D4AF37;
-      }
+        .navbar-brand:hover img {
+            transform: rotate(360deg);
+            color: #D4AF37;
+        }
 
-      .nav-link {
-          color: rgba(255, 255, 255, 0.8) !important;
-          font-size: 16px;
-          font-weight: 500;
-      }
+        .nav-link {
+            color: rgba(255, 255, 255, 0.8) !important;
+            font-size: 16px;
+            font-weight: 500;
+        }
 
-       .nav-link:hover {
-          color: #FFD700 !important;
-      } 
+         .nav-link:hover {
+            color: #FFD700 !important;
+        } 
 
-      .navbar-toggler {
-          border: none;
-          color: white;
-          background-color: white;
-      }
+        .navbar-toggler {
+            border: none;
+            color: white;
+            background-color: white;
+        }
+
+      .footer {
+            background-color: #333;
+            color: #D4AF37; 
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer a {
+            color: #D4AF37;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #FFD700;
+        }
 
       @media (min-width: 577px) and (max-width: 768px) {
   .navbar-brand {
@@ -99,7 +118,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./index.html">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li  class="nav-item">
                         <a class="nav-link" href="./About.html">About Us</a>
                     </li>
                     <li class="nav-item">
@@ -187,6 +206,16 @@
             </ul>
         </div>
     </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Algoranbasketballtv. All rights reserved.</p>
+            <p>
+                <a href="#">Privacy Policy</a> | 
+                <a href="#">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
     

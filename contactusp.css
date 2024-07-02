@@ -132,8 +132,21 @@ body {
 }
 
 .footer {
-    background-color: #ffd700; 
-    color: black; 
+    background-color: #333;
+    color: #D4AF37; 
     text-align: center;
     padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    color: #D4AF37;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #FFD700;
 }
